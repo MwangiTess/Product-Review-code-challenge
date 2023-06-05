@@ -9,7 +9,7 @@ end
 50.times do
   # create a product with random data
   product = Product.create(
-    products_name: Faker::Product.name,
+    products_name: Faker::Commerce.product_name,
     description: Faker::Lorem.sentence,
     brand: Faker::Company.name,
     price: rand(0..60) # random number between 0 and 60
@@ -31,3 +31,4 @@ end
 end
 
 puts "🌱 Done seeding!"
+
